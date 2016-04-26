@@ -1,4 +1,3 @@
-
 <% if params[:controller] == 'about' %>
 	<div class="well"
 		<h3>Location Info</h3>
@@ -10,4 +9,11 @@
 			<li>Email: support@thebookstore.com</li>
 		</ul>
 	</div>
-<% end %>		
+<% end %>
+<% if params[:controller] == 'books' && params[:action] == 'index' || params[:action] == 'show' %>
+<div class="list-group">
+  <a href="#" class="list-group-item">Ruby on Rails</a>
+  <a href="#" class="list-group-item">Python</a>
+  <a href="#" class="list-group-item">jQuery Mobile</a>
+</div>
+<% end %>	
