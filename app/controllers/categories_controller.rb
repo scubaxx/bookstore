@@ -5,6 +5,10 @@ class CategoriesController < ApplicationController
   end
 
   def create
+    @category = Category.new(category_params)
+    @category.save
+
+    redirect_to categories_path
   end
 
   def update
